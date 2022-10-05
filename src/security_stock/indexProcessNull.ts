@@ -1,14 +1,16 @@
+import dotenv from "dotenv";
 import { csvLoad } from "./csvLoad";
 import { processItems } from "./processNull";
 
 (async () => {
+  dotenv.config();
   const request = {
     context: {
       rdsEasy: {
         database: process.env.DATABASE,
         host: process.env.HOST_STAGING,
         password: process.env.PASSWORD_STAGING,
-        username: process.env.USERNAME,
+        username: process.env.USER_DB,
       },
     },
   };

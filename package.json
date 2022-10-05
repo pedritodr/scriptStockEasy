@@ -27,6 +27,7 @@
     "@stockoverflow/pandora": "^2.7.0",
     "csv-parser": "^3.0.0",
     "D": "^1.0.0",
+    "dotenv": "^16.0.3",
     "moment-timezone": "^0.5.37",
     "serverless-manager-mysql": "^1.0.1",
     "ts-standard": "^11.0.0"

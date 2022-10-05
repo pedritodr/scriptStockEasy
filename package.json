@@ -1,0 +1,42 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ssf": "ts-node-dev src/security_stock/index.ts",
+    "repeat": "ts-node-dev src/security_stock/repetidos.ts",
+    "pnull": "ts-node-dev src/security_stock/indexProcessNull.ts",
+    "ssnull": "ts-node-dev src/security_stock/indexProcessNullSS.ts",
+    "lint": "ts-standard",
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node-dev": "1.1.8",
+    "typescript": "4.6.3"
+  },
+  "dependencies": {
+    "-": "0.0.1",
+    "@aws-sdk/client-dynamodb": "^3.131.0",
+    "@aws-sdk/client-sqs": "^3.131.0",
+    "@stockoverflow/orm-wrapper": "^2.9.2",
+    "@stockoverflow/pandora": "^2.7.0",
+    "csv-parser": "^3.0.0",
+    "D": "^1.0.0",
+    "moment-timezone": "^0.5.37",
+    "serverless-manager-mysql": "^1.0.1",
+    "ts-standard": "^11.0.0"
+  },
+  "esLintConfig": {
+    "parserOptions": {
+      "project": ".tsconfig.json"
+    },
+    "extends": [
+      "./node_modules/ts-standard/esLintrs.json"
+    ]
+  }
+}
